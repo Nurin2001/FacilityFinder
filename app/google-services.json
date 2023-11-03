@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "347719032397",
+    "project_id": "facilityfinder-f5e8b",
+    "storage_bucket": "facilityfinder-f5e8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347719032397:android:6bc4b54d17bfd5ff668604",
+        "android_client_info": {
+          "package_name": "com.assignment.facilityfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347719032397-t22o5p3atq69fgrdatndms37fm4ho26f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCGW1wRQw61s2qQiD-a8fIUUnP7OZGKIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347719032397-t22o5p3atq69fgrdatndms37fm4ho26f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
