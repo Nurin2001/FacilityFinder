@@ -15,7 +15,9 @@
         app:layout_constraintWidth_percent=".8"
         app:layout_constraintVertical_bias=".3"
         app:layout_constraintHorizontal_bias=".5"
-        android:hint="Email"/>
+        android:hint="Email"
+        android:background="@drawable/edit_text_custom"
+        android:padding="10dp"/>
 
     <EditText
         android:id="@+id/passs_et"
@@ -29,7 +31,9 @@
         android:layout_marginTop="20dp"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintHorizontal_bias=".5"
-        android:hint="Password"/>
+        android:hint="Password"
+        android:background="@drawable/edit_text_custom"
+        android:padding="10dp"/>
 
     <EditText
         android:id="@+id/names_et"
@@ -43,7 +47,9 @@
         android:layout_marginTop="20dp"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintHorizontal_bias=".5"
-        android:hint="Name"/>
+        android:hint="Name"
+        android:background="@drawable/edit_text_custom"
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/signup_btn"
@@ -57,6 +63,8 @@
         app:layout_constraintVertical_bias=".7"
         app:layout_constraintHorizontal_bias=".5"
         android:text="Sign Up"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:background="@drawable/custom_btn"
+        android:textColor="#D5FFFFFF"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@ public class Signin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signin);
+        //setContentView(R.layout.activity_signin);
         //FirebaseApp.initializeApp(this);
 
 

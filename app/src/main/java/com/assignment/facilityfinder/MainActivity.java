@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private MeowBottomNavigation bottomNavigation;
     RelativeLayout locationLayout, homeLayout, profileLayout, loginLayout, logoutLayout;
 
-    Button profileBtn, logoutBtn;
+    Button profileBtn, logoutBtn, editBtn;
     TextView nameTxt;
 
     TabLayout tabLayout;
@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         //profileBtn = findViewById(R.id.profileBtn);
         logoutBtn = findViewById(R.id.logoutBtn);
+        editBtn = findViewById(R.id.edit_btn);
 
         //get instance of FirebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
@@ -78,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
         }catch (Exception e) {
 
         }
-
-
 
         bottomNavigation = findViewById(R.id.bottom_nav_home);
 
@@ -220,6 +219,15 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
+        editBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(new Intent(MainActivity.this, EditProfileActivity.class));
+                finish();
+
+            }
+        });
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override

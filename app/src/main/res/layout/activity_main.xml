@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
         android:id="@+id/bottom_nav_home"
@@ -81,8 +82,8 @@
             android:id="@+id/login_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="visible"
-            android:background="#091E41">
+            android:background="#091E41"
+            android:visibility="visible">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -96,22 +97,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
-                    app:layout_constraintVertical_bias="0"
-                    app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
 
                 <com.google.android.material.tabs.TabLayout
                     android:id="@+id/tab_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintVertical_bias="0"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:backgroundTint="#00FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:backgroundTint="#00FFFFFF"/>
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </RelativeLayout>
@@ -124,21 +125,46 @@
 
             <TextView
                 android:id="@+id/name_txt"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello, name!"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="58dp"
                 android:gravity="center"
-                android:layout_marginTop="250dp"
-                android:textSize="20sp"/>
+                android:text="Name: Your name"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/email_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/name_txt"
+                android:layout_marginTop="58dp"
+                android:gravity="center"
+                android:text="Email: your email"
+                android:textSize="20sp"
+                android:layout_marginStart="10dp"/>
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/email_txt"
+                android:layout_marginTop="45dp"
+                android:text="Edit Profile"
+                android:textSize="22sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
 
             <Button
                 android:id="@+id/logoutBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignTop="@id/edit_btn"
+                android:layout_marginTop="45dp"
                 android:text="Log Out"
                 android:textSize="22sp"
-                android:layout_centerInParent="true"
-                android:gravity="center"/>
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
 
         </RelativeLayout>
 

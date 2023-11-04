@@ -38,7 +38,7 @@ public class SignInFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.signin_tab_fragment, container, false);
 
-        FirebaseApp.initializeApp(getActivity());
+        //FirebaseApp.initializeApp(getActivity());
 
 
         emailEt = root.findViewById(R.id.email_et);
